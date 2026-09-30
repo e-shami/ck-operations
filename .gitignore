@@ -34,3 +34,10 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+*.md
+!README.md
+!README.MD
+!LICENSE
+!LICENSE.md
+!LICENSE.MD
