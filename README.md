@@ -11,7 +11,7 @@ pnpm install --frozen-lockfile
 pnpm dev
 ```
 
-Open http://localhost:3000. Phase 0 intentionally renders an empty page; design and content follow in later phases.
+Open http://localhost:3000. Phase 1 provides the design system, responsive header/mobile navigation, footer, and clearly marked section placeholders. Marketing content and the contact form follow in later phases.
 
 If pnpm is not installed globally, use `npx --yes pnpm@10.30.0` in place of `pnpm` for each command.
 
@@ -28,10 +28,8 @@ pnpm format:check
 
 ## Project Guidance
 
-Before writing code, read [rules](docs/rules.md), [memory](docs/memory.md), and the current [phase](docs/phases.md).
+Project planning documents in `docs/` are local-only and ignored by Git. If available in your workspace, read `rules.md`, `memory.md`, and `phases.md` before working, alongside `prd.md`, `architecture.md`, and `design.md`. They are not included in a fresh clone.
 
-- [Product requirements](docs/prd.md)
-- [Architecture](docs/architecture.md)
-- [Proposed design](docs/design.md)
+The application uses Next.js 15, strict TypeScript, and Tailwind CSS 3 with a typed theme configuration. The blue palette is sampled from the supplied legacy logo; the text wordmark retains the current Cloud Krown name until redesigned artwork is available. Plus Jakarta Sans and Inter are loaded through `next/font`. All interface copy lives in `src/content/site.ts`.
 
-The scaffold uses Next.js 15, strict TypeScript, and Tailwind CSS 3 with a typed theme configuration. Design tokens and fonts await approval in Phase 1. Feature-specific routes, assets, and integrations are added in their respective phases, not as nonfunctional stubs.
+Phase 1 uses a white sticky header. The translucent dark hero-header treatment follows with the hero and suitable redesigned logo assets. Contact details and legal destinations remain visible placeholders rather than fabricated email addresses or broken links.
