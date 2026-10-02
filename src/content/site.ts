@@ -20,8 +20,8 @@ export const site = {
     { label: "Platforms", href: "#platforms" },
   ],
   primaryCta: { label: "Book a call", href: "#contact" },
-  // Phase 2 copy is draft, based on the project brief, not approved marketing claims.
-  copyReview: "Draft copy: Hero, Problem, and Solution await owner approval.",
+  // Marketing copy remains draft until explicitly approved by the owner.
+  copyReview: "Draft copy: All marketing sections await owner approval.",
   hero: {
     eyebrow: "Property management. AI + human.",
     headline: "Scale your portfolio.",
@@ -101,40 +101,99 @@ export const site = {
     closingDetail:
       "AI, automation, and specialists operate together, not as separate handoffs.",
   },
-  shell: {
-    sections: [
+  services: {
+    eyebrow: "Services",
+    headline: "The work behind every property.",
+    description:
+      "Property operations, accounting, and the day-to-day details, supported by specialists and connected workflows.",
+    groups: [
       {
-        id: "services",
-        title: "Services",
-        placeholder: "[PLACEHOLDER: Services section copy]",
-        tone: "tinted",
+        title: "Property management outsourcing",
+        description:
+          "Support for the recurring operational work that keeps your back office moving.",
+        items: ["Administrative operations", "Rent collection support"],
       },
       {
-        id: "differentiator",
-        title: "Not a virtual assistant company",
-        placeholder: "[PLACEHOLDER: Differentiation section copy]",
-        tone: "light",
+        title: "Property accounting & bookkeeping",
+        description:
+          "Specialist support for the books, transactions, and reporting behind your portfolio.",
+        items: [
+          "AP/AR",
+          "Bank reconciliations",
+          "Trust accounting",
+          "Financial reporting",
+        ],
       },
       {
-        id: "platforms",
-        title: "Platforms",
-        placeholder: "[PLACEHOLDER: Platform compatibility section]",
-        tone: "tinted",
+        title: "Leasing & resident support",
+        description:
+          "Coordination across the leasing cycle, from the first steps to the next renewal.",
+        items: ["Leasing support", "Renewals", "Move-ins/move-outs"],
       },
       {
-        id: "vision",
-        title: "Vision",
-        placeholder: "[PLACEHOLDER: Vision section copy]",
-        tone: "dark",
-      },
-      {
-        id: "contact",
-        title: "Contact",
-        placeholder:
-          "[PLACEHOLDER: Contact form and booking details in Phase 4]",
-        tone: "light",
+        title: "Maintenance & communication",
+        description:
+          "Support for maintenance coordination and the conversations that need a human response.",
+        items: ["Maintenance coordination", "Tenant & owner communication"],
       },
     ],
+  },
+  differentiator: {
+    eyebrow: "A different operating model",
+    headline: "Not a virtual assistant company.",
+    description:
+      "The difference is how the work is organized. Cloud Krown brings AI, automation, and specialists together as an operating workforce, rather than treating every task as another assignment for a person.",
+    taskLabel: "Task-first support",
+    workforceLabel: "Cloud Krown's workforce",
+    comparison: [
+      {
+        topic: "Starting point",
+        task: "Delegate individual tasks to a person.",
+        workforce:
+          "Connect property operations and accounting through shared workflows.",
+      },
+      {
+        topic: "Repeatable work",
+        task: "Assign recurring work as another queue of tasks.",
+        workforce: "Use AI and automation for repetitive, high-volume work.",
+      },
+      {
+        topic: "Human contribution",
+        task: "A person carries out the assigned tasks.",
+        workforce:
+          "Specialists handle exceptions, decisions, communication, and quality control.",
+      },
+    ],
+    note: "An illustration of two operating approaches, not a claim about every virtual assistant provider.",
+  },
+  platforms: {
+    eyebrow: "Works with",
+    headline: "The software your team already uses.",
+    description:
+      "Support for workflows across property management and accounting platforms.",
+    names: [
+      "AppFolio",
+      "Buildium",
+      "Rent Manager",
+      "DoorLoop",
+      "Yardi",
+      "QuickBooks",
+      "Xero",
+    ],
+    note: "Platform names indicate workflow compatibility only, not partnerships or endorsements.",
+  },
+  vision: {
+    eyebrow: "The vision",
+    headline: "Beyond outsourcing. A different way to grow.",
+    description:
+      "Our vision is a back office where operational capacity can grow with the portfolio, without continuously adding headcount.",
+    detail:
+      "Automate what machines do best. Keep experienced professionals where human judgment matters. Build the two into one operating workforce.",
+    cta: { label: "Talk about your portfolio", href: "#contact" },
+  },
+  contact: {
+    heading: "Contact",
+    placeholder: "[PLACEHOLDER: Contact form and booking details in Phase 4]",
   },
   footer: {
     contactPlaceholder: "[PLACEHOLDER: Contact email]",

@@ -11,7 +11,7 @@ pnpm install --frozen-lockfile
 pnpm dev
 ```
 
-Open http://localhost:3000. Phase 2 adds Hero, Problem, and Solution sections to the responsive layout shell. Their copy is explicitly marked as draft pending owner review. Both hero CTAs scroll to the contact placeholder; remaining sections and the contact form follow in later phases.
+Open http://localhost:3000. Phases 2 and 3 provide Hero, Problem, Solution, Services, Differentiator, Platforms, and Vision sections. Marketing copy is explicitly marked as draft pending owner review. Hero and Vision CTAs scroll to the contact placeholder; the contact form follows in Phase 4.
 
 If pnpm is not installed globally, use `npx --yes pnpm@10.30.0` in place of `pnpm` for each command.
 
