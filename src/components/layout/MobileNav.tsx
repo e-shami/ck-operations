@@ -36,7 +36,7 @@ export function MobileNav() {
           open ? site.accessibility.closeMenu : site.accessibility.openMenu
         }
         onClick={() => setOpen(!open)}
-        className="flex min-h-11 min-w-11 items-center gap-3 rounded-control border border-brand-700 px-3 text-caption font-semibold text-brand-700"
+        className="flex min-h-11 min-w-11 items-center gap-3 rounded-control border border-brand-700 px-3 text-caption font-semibold text-brand-700 group-data-[theme=dark]/header:border-sky-200 group-data-[theme=dark]/header:text-white group-data-[theme=dark]/header:focus-visible:outline-sky-400"
       >
         {site.accessibility.menu}
         <span aria-hidden="true" className="text-xl leading-none">

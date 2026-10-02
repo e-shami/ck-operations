@@ -11,7 +11,7 @@ pnpm install --frozen-lockfile
 pnpm dev
 ```
 
-Open http://localhost:3000. Phase 1 provides the design system, responsive header/mobile navigation, footer, and clearly marked section placeholders. Marketing content and the contact form follow in later phases.
+Open http://localhost:3000. Phase 2 adds Hero, Problem, and Solution sections to the responsive layout shell. Their copy is explicitly marked as draft pending owner review. Both hero CTAs scroll to the contact placeholder; remaining sections and the contact form follow in later phases.
 
 If pnpm is not installed globally, use `npx --yes pnpm@10.30.0` in place of `pnpm` for each command.
 
@@ -32,4 +32,4 @@ Project planning documents in `docs/` are local-only and ignored by Git. If avai
 
 The application uses Next.js 15, strict TypeScript, and Tailwind CSS 3 with a typed theme configuration. The blue palette is sampled from the supplied legacy logo; the text wordmark retains the current Cloud Krown name until redesigned artwork is available. Plus Jakarta Sans and Inter are loaded through `next/font`. All interface copy lives in `src/content/site.ts`.
 
-Phase 1 uses a white sticky header. The translucent dark hero-header treatment follows with the hero and suitable redesigned logo assets. Contact details and legal destinations remain visible placeholders rather than fabricated email addresses or broken links.
+The sticky header is translucent navy over the hero and white over light content. The hero graphic is an illustrative AI/automation-to-human workflow, not a product screenshot. Contact details and legal destinations remain visible placeholders rather than fabricated email addresses or broken links.

@@ -1,21 +1,16 @@
 import { Section } from "@/components/layout/Section";
 import { Heading } from "@/components/ui/Heading";
 import { site } from "@/content/site";
+import { Hero } from "@/components/sections/Hero";
+import { Problem } from "@/components/sections/Problem";
+import { Solution } from "@/components/sections/Solution";
 
 export default function HomePage() {
   return (
-    <main id="main-content" tabIndex={-1}>
-      <Section aria-labelledby="page-heading">
-        <Heading
-          as="h1"
-          size="display"
-          id="page-heading"
-          className="max-w-prose"
-        >
-          {site.brand.name}
-        </Heading>
-        <p className="mt-6 max-w-prose text-slate-600">{site.shell.label}</p>
-      </Section>
+    <main id="main-content" tabIndex={-1} className="-mt-24">
+      <Hero />
+      <Problem />
+      <Solution />
       {site.shell.sections.map((section) => (
         <Section
           key={section.id}
