@@ -1,7 +1,9 @@
 import { site } from "@/content/site";
 import { Container } from "./Container";
+import { getContactEnv } from "@/lib/env";
 
 export function Footer() {
+  const { NEXT_PUBLIC_CONTACT_EMAIL: contactEmail } = getContactEnv();
   return (
     <footer data-tone="dark" className="bg-brand-950 py-12 text-white md:py-16">
       <Container>
@@ -19,9 +21,12 @@ export function Footer() {
                 {site.brand.descriptor}
               </span>
             </a>
-            <p className="mt-6 text-caption text-sky-200">
-              {site.footer.contactPlaceholder}
-            </p>
+            <a
+              href={`mailto:${contactEmail}`}
+              className="mt-6 inline-flex min-h-11 max-w-full items-center break-all rounded-control text-caption text-sky-200 underline underline-offset-4"
+            >
+              {contactEmail}
+            </a>
           </div>
           <nav
             aria-label={site.accessibility.footerNav}

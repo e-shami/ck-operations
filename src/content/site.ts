@@ -193,10 +193,50 @@ export const site = {
   },
   contact: {
     heading: "Contact",
-    placeholder: "[PLACEHOLDER: Contact form and booking details in Phase 4]",
+    eyebrow: "Let's talk",
+    headline: "Tell us about your back office.",
+    description:
+      "Share a little about your company, portfolio, and the work you need support with.",
+    required: "All fields are required.",
+    sensitiveInfo:
+      "Please don't include tenant, owner, banking, or other sensitive information.",
+    directEmail: "Prefer email?",
+    fallback: "You can also email us at",
+    submit: "Send message",
+    submitting: "Sending...",
+    sendAnother: "Send another message",
+    noScript:
+      "JavaScript is required to submit this form. Please use the email link instead.",
+    successTitle: "Thank you for getting in touch.",
+    successDetail: "Your message has been sent to the Cloud Krown team.",
+    emailSubject: "Cloud Krown Operations: new contact request",
+    fields: {
+      name: "Name",
+      email: "Work email",
+      company: "Company",
+      portfolioSize: "Portfolio size (number of properties)",
+      message: "Message",
+      website: "Leave this field empty",
+    },
+    validation: {
+      name: "Enter your name using up to 100 characters.",
+      email: "Enter a valid email address using up to 254 characters.",
+      company: "Enter your company name using up to 150 characters.",
+      portfolioSize:
+        "Enter a whole number using up to 9 digits, including 0 if applicable.",
+      message: "Enter a message using up to 4,000 characters.",
+    },
+    messages: {
+      invalidRequest:
+        "We couldn't process this request. Refresh the page and try again.",
+      invalidFields: "Please check the highlighted fields.",
+      tooLarge: "Your message is too large. Shorten it and try again.",
+      rateLimited: "Too many requests. Please try again shortly.",
+      unavailable:
+        "We couldn't send your message. Please try again or email us directly.",
+    },
   },
   footer: {
-    contactPlaceholder: "[PLACEHOLDER: Contact email]",
     legalPlaceholder:
       "[PLACEHOLDER: Privacy policy and terms links pending approved pages]",
     copyright: "Cloud Krown Operations",
