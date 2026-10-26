@@ -31,8 +31,10 @@ export const metadata: Metadata = {
   title,
   description: site.hero.description,
   applicationName: site.brand.name,
+  alternates: { canonical: "/" },
   openGraph: {
     type: "website",
+    url: "/",
     siteName: site.brand.name,
     title,
     description: site.hero.description,
