@@ -4,6 +4,7 @@ import { Solution } from "@/components/sections/Solution";
 import { Services } from "@/components/sections/Services";
 import { Differentiator } from "@/components/sections/Differentiator";
 import { Platforms } from "@/components/sections/Platforms";
+import { Team } from "@/components/sections/Team";
 import { Vision } from "@/components/sections/Vision";
 import { Contact } from "@/components/sections/Contact";
 
@@ -16,6 +17,7 @@ export default function HomePage() {
       <Services />
       <Differentiator />
       <Platforms />
+      <Team />
       <Vision />
       <Contact />
     </main>

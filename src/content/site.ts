@@ -182,6 +182,45 @@ export const site = {
     ],
     note: "Platform names indicate workflow compatibility only, not partnerships or endorsements.",
   },
+  team: {
+    eyebrow: "Our team",
+    headline: "The people behind the workflow.",
+    description:
+      "Property operations and accounting specialists working alongside AI and automation, with human judgment where it matters.",
+    note: "Placeholder profiles. Names, roles, and details are illustrative pending owner approval.",
+    members: [
+      {
+        name: "Jordan Ellis",
+        role: "Property Operations Lead",
+        focus: "Day-to-day portfolio operations and escalations.",
+      },
+      {
+        name: "Priya Raman",
+        role: "Property Accounting Lead",
+        focus: "AP/AR, reconciliations, and financial reporting.",
+      },
+      {
+        name: "Marcus Lee",
+        role: "Leasing Operations Specialist",
+        focus: "Leasing, renewals, and move-in coordination.",
+      },
+      {
+        name: "Sofia Alvarez",
+        role: "Resident & Owner Support",
+        focus: "Communication, follow-through, and issue resolution.",
+      },
+      {
+        name: "Daniel Kim",
+        role: "Maintenance Coordinator",
+        focus: "Work orders, vendor follow-up, and scheduling.",
+      },
+      {
+        name: "Aisha Carter",
+        role: "Automation & Quality Lead",
+        focus: "Workflow design, review, and quality control.",
+      },
+    ],
+  },
   vision: {
     eyebrow: "The vision",
     headline: "Beyond outsourcing. A different way to grow.",

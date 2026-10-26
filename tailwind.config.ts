@@ -23,6 +23,13 @@ export default {
       spacing: { section: "4rem", "section-desktop": "7rem" },
       borderRadius: { control: "0.5rem", card: "1rem" },
       boxShadow: { card: "0 1px 2px rgb(8 27 68 / 0.06)" },
+      keyframes: {
+        marquee: {
+          from: { transform: "translateX(0)" },
+          to: { transform: "translateX(-50%)" },
+        },
+      },
+      animation: { marquee: "marquee 42s linear infinite" },
       fontSize: {
         "display-mobile": ["2.25rem", { lineHeight: "1.1", fontWeight: "800" }],
         display: ["3.75rem", { lineHeight: "1.1", fontWeight: "800" }],

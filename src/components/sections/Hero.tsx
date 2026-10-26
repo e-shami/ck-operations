@@ -78,6 +78,7 @@ export function Hero() {
             aria-hidden="true"
             focusable="false"
             viewBox="0 0 400 64"
+            preserveAspectRatio="none"
             className="h-16 w-full text-sky-400"
             fill="none"
           >

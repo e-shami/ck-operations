@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { site } from "@/content/site";
 import { Container } from "./Container";
 import { getContactEnv } from "@/lib/env";
@@ -12,18 +13,27 @@ export function Footer() {
             <a
               href="#top"
               aria-label={site.brand.homeLabel}
-              className="inline-flex min-h-11 flex-col justify-center rounded-control"
+              className="inline-flex min-h-11 items-center gap-3 rounded-control"
             >
-              <span className="font-heading text-subheading-mobile font-bold md:text-subheading">
-                {site.brand.wordmark}
-              </span>
-              <span className="text-eyebrow-mobile uppercase text-sky-400 md:text-eyebrow">
-                {site.brand.descriptor}
+              <Image
+                src="/images/logo-mark-white.png"
+                alt=""
+                width={120}
+                height={101}
+                className="h-10 w-auto"
+              />
+              <span className="flex flex-col justify-center">
+                <span className="font-heading text-subheading-mobile font-bold md:text-subheading">
+                  {site.brand.wordmark}
+                </span>
+                <span className="text-eyebrow-mobile uppercase text-sky-400 md:text-eyebrow">
+                  {site.brand.descriptor}
+                </span>
               </span>
             </a>
             <a
               href={`mailto:${contactEmail}`}
-              className="mt-6 inline-flex min-h-11 max-w-full items-center break-all rounded-control text-caption text-sky-200 underline underline-offset-4"
+              className="mt-6 flex w-fit min-h-11 max-w-full items-center break-all rounded-control text-caption text-sky-200 underline underline-offset-4"
             >
               {contactEmail}
             </a>

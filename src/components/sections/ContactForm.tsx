@@ -94,7 +94,7 @@ export function ContactForm({ contactEmail }: { contactEmail: string }) {
   }
 
   const inputClass =
-    "mt-2 min-h-11 w-full rounded-control border border-slate-600 bg-white px-3 py-3 text-body text-ink-900 focus:border-brand-600 aria-[invalid=true]:border-danger-600";
+    "mt-2 min-h-11 w-full rounded-control border border-slate-600 bg-white px-3 py-3 text-body text-ink-900 focus:border-brand-600 focus:ring-2 focus:ring-brand-600/30 aria-[invalid=true]:border-danger-600";
   return (
     <div className="rounded-card border border-slate-200 bg-sky-50 p-6 shadow-card md:p-8">
       {result?.ok ? (
